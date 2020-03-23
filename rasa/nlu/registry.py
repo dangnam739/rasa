@@ -48,6 +48,8 @@ from rasa.utils.tensorflow.constants import (
     ENTITY_RECOGNITION,
     NUM_TRANSFORMER_LAYERS,
 )
+from rasa.nlu.tokenizers.japanese_tokenizer import SudachiTokenizer
+
 
 if typing.TYPE_CHECKING:
     from rasa.nlu.components import Component
@@ -70,6 +72,7 @@ component_classes = [
     ConveRTTokenizer,
     JiebaTokenizer,
     LanguageModelTokenizer,
+    SudachiTokenizer,
     # extractors
     SpacyEntityExtractor,
     MitieEntityExtractor,
